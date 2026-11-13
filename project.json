@@ -1,0 +1,8 @@
+{
+  "package": "deliberation_lake",
+  "tests": "tests/deliberation_cycles",
+  "entrypoint": "deliberation_lake.console.run",
+  "fixture_prefix": [],
+  "database_flag": "--database",
+  "analysis_fixture": "fixtures/preference_portfolios.json"
+}

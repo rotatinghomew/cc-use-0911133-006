@@ -1,0 +1,828 @@
+{
+  "schema_version": 1,
+  "seed": 29,
+  "budget": 10,
+  "groups": [
+    {
+      "id": "day",
+      "seats": 2
+    },
+    {
+      "id": "night",
+      "seats": 2
+    },
+    {
+      "id": "residents",
+      "seats": 2
+    }
+  ],
+  "proposals": [
+    {
+      "id": "P0",
+      "version": 1,
+      "cost": 2,
+      "depends_on": [],
+      "exclusive_with": []
+    },
+    {
+      "id": "P1",
+      "version": 1,
+      "cost": 4,
+      "depends_on": [],
+      "exclusive_with": []
+    },
+    {
+      "id": "P2",
+      "version": 1,
+      "cost": 3,
+      "depends_on": [],
+      "exclusive_with": []
+    },
+    {
+      "id": "P3",
+      "version": 1,
+      "cost": 5,
+      "depends_on": [],
+      "exclusive_with": [
+        "P4"
+      ]
+    },
+    {
+      "id": "P4",
+      "version": 1,
+      "cost": 6,
+      "depends_on": [],
+      "exclusive_with": []
+    },
+    {
+      "id": "P5",
+      "version": 1,
+      "cost": 2,
+      "depends_on": [
+        "P0"
+      ],
+      "exclusive_with": []
+    },
+    {
+      "id": "P6",
+      "version": 1,
+      "cost": 4,
+      "depends_on": [],
+      "exclusive_with": []
+    }
+  ],
+  "ballots": [
+    {
+      "representative": "r-a",
+      "group": "day",
+      "revision": 1,
+      "proposal_versions": {
+        "P0": 1,
+        "P1": 1,
+        "P2": 1,
+        "P3": 1,
+        "P4": 1,
+        "P5": 1,
+        "P6": 1
+      },
+      "ranking": [
+        [
+          "P0"
+        ],
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ]
+      ],
+      "unacceptable": [
+        "P4"
+      ]
+    },
+    {
+      "representative": "r-b",
+      "group": "night",
+      "revision": 1,
+      "proposal_versions": {
+        "P0": 1,
+        "P1": 1,
+        "P2": 1,
+        "P3": 1,
+        "P4": 1,
+        "P5": 1,
+        "P6": 1
+      },
+      "ranking": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P0"
+        ]
+      ],
+      "unacceptable": [
+        "P3"
+      ]
+    },
+    {
+      "representative": "r-c",
+      "group": "residents",
+      "revision": 1,
+      "proposal_versions": {
+        "P0": 1,
+        "P1": 1,
+        "P2": 1,
+        "P3": 1,
+        "P4": 1,
+        "P5": 1,
+        "P6": 1
+      },
+      "ranking": [
+        [
+          "P2"
+        ],
+        [
+          "P0"
+        ],
+        [
+          "P1"
+        ]
+      ],
+      "unacceptable": []
+    },
+    {
+      "representative": "r-d",
+      "group": "night",
+      "revision": 1,
+      "proposal_versions": {
+        "P4": 1,
+        "P5": 1
+      },
+      "ranking": [
+        [
+          "P4",
+          "P5"
+        ]
+      ],
+      "unacceptable": []
+    },
+    {
+      "representative": "r-a",
+      "group": "day",
+      "revision": 2,
+      "proposal_versions": {
+        "P0": 1,
+        "P1": 1,
+        "P2": 1,
+        "P3": 1,
+        "P4": 1,
+        "P5": 1,
+        "P6": 1
+      },
+      "ranking": [
+        [
+          "P0",
+          "P5"
+        ],
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ]
+      ],
+      "unacceptable": [
+        "P4"
+      ]
+    }
+  ],
+  "absent_representatives": [
+    {
+      "representative": "r-e",
+      "group": "day"
+    },
+    {
+      "representative": "r-f",
+      "group": "residents"
+    }
+  ],
+  "proposal_changes": [
+    {
+      "id": "P1",
+      "version": 2,
+      "cost": 6,
+      "compatible_ballot_versions": []
+    }
+  ],
+  "larger_case": {
+    "budget": 36,
+    "proposals": [
+      {
+        "id": "L0",
+        "version": 1,
+        "cost": 1,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L1",
+        "version": 1,
+        "cost": 2,
+        "depends_on": [
+          "L0"
+        ],
+        "exclusive_with": []
+      },
+      {
+        "id": "L2",
+        "version": 1,
+        "cost": 3,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L3",
+        "version": 1,
+        "cost": 4,
+        "depends_on": [],
+        "exclusive_with": [
+          "L4"
+        ]
+      },
+      {
+        "id": "L4",
+        "version": 1,
+        "cost": 5,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L5",
+        "version": 1,
+        "cost": 6,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L6",
+        "version": 1,
+        "cost": 7,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L7",
+        "version": 1,
+        "cost": 1,
+        "depends_on": [
+          "L6"
+        ],
+        "exclusive_with": []
+      },
+      {
+        "id": "L8",
+        "version": 1,
+        "cost": 2,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L9",
+        "version": 1,
+        "cost": 3,
+        "depends_on": [],
+        "exclusive_with": [
+          "L10"
+        ]
+      },
+      {
+        "id": "L10",
+        "version": 1,
+        "cost": 4,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L11",
+        "version": 1,
+        "cost": 5,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L12",
+        "version": 1,
+        "cost": 6,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L13",
+        "version": 1,
+        "cost": 7,
+        "depends_on": [
+          "L12"
+        ],
+        "exclusive_with": []
+      },
+      {
+        "id": "L14",
+        "version": 1,
+        "cost": 1,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L15",
+        "version": 1,
+        "cost": 2,
+        "depends_on": [],
+        "exclusive_with": [
+          "L16"
+        ]
+      },
+      {
+        "id": "L16",
+        "version": 1,
+        "cost": 3,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L17",
+        "version": 1,
+        "cost": 4,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L18",
+        "version": 1,
+        "cost": 5,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L19",
+        "version": 1,
+        "cost": 6,
+        "depends_on": [
+          "L18"
+        ],
+        "exclusive_with": []
+      },
+      {
+        "id": "L20",
+        "version": 1,
+        "cost": 7,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L21",
+        "version": 1,
+        "cost": 1,
+        "depends_on": [],
+        "exclusive_with": [
+          "L22"
+        ]
+      },
+      {
+        "id": "L22",
+        "version": 1,
+        "cost": 2,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L23",
+        "version": 1,
+        "cost": 3,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L24",
+        "version": 1,
+        "cost": 4,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L25",
+        "version": 1,
+        "cost": 5,
+        "depends_on": [
+          "L24"
+        ],
+        "exclusive_with": []
+      },
+      {
+        "id": "L26",
+        "version": 1,
+        "cost": 6,
+        "depends_on": [],
+        "exclusive_with": []
+      },
+      {
+        "id": "L27",
+        "version": 1,
+        "cost": 7,
+        "depends_on": [],
+        "exclusive_with": [
+          "L28"
+        ]
+      }
+    ],
+    "ballots": [
+      {
+        "representative": "large-r-0",
+        "group": "day",
+        "revision": 1,
+        "proposal_versions": {
+          "L0": 1,
+          "L1": 1,
+          "L2": 1,
+          "L3": 1,
+          "L4": 1,
+          "L5": 1,
+          "L6": 1,
+          "L7": 1,
+          "L8": 1,
+          "L9": 1,
+          "L10": 1,
+          "L11": 1,
+          "L12": 1,
+          "L13": 1,
+          "L14": 1,
+          "L15": 1,
+          "L16": 1,
+          "L17": 1,
+          "L18": 1,
+          "L19": 1,
+          "L20": 1,
+          "L21": 1,
+          "L22": 1,
+          "L23": 1,
+          "L24": 1,
+          "L25": 1,
+          "L26": 1,
+          "L27": 1
+        },
+        "ranking": [
+          [
+            "L0"
+          ],
+          [
+            "L1"
+          ],
+          [
+            "L2"
+          ],
+          [
+            "L3"
+          ],
+          [
+            "L4"
+          ],
+          [
+            "L5"
+          ],
+          [
+            "L6"
+          ],
+          [
+            "L7"
+          ]
+        ],
+        "unacceptable": [
+          "L15"
+        ]
+      },
+      {
+        "representative": "large-r-1",
+        "group": "night",
+        "revision": 1,
+        "proposal_versions": {
+          "L0": 1,
+          "L1": 1,
+          "L2": 1,
+          "L3": 1,
+          "L4": 1,
+          "L5": 1,
+          "L6": 1,
+          "L7": 1,
+          "L8": 1,
+          "L9": 1,
+          "L10": 1,
+          "L11": 1,
+          "L12": 1,
+          "L13": 1,
+          "L14": 1,
+          "L15": 1,
+          "L16": 1,
+          "L17": 1,
+          "L18": 1,
+          "L19": 1,
+          "L20": 1,
+          "L21": 1,
+          "L22": 1,
+          "L23": 1,
+          "L24": 1,
+          "L25": 1,
+          "L26": 1,
+          "L27": 1
+        },
+        "ranking": [
+          [
+            "L1"
+          ],
+          [
+            "L2"
+          ],
+          [
+            "L3"
+          ],
+          [
+            "L4"
+          ],
+          [
+            "L5"
+          ],
+          [
+            "L6"
+          ],
+          [
+            "L7"
+          ],
+          [
+            "L8"
+          ]
+        ],
+        "unacceptable": [
+          "L16"
+        ]
+      },
+      {
+        "representative": "large-r-2",
+        "group": "residents",
+        "revision": 1,
+        "proposal_versions": {
+          "L0": 1,
+          "L1": 1,
+          "L2": 1,
+          "L3": 1,
+          "L4": 1,
+          "L5": 1,
+          "L6": 1,
+          "L7": 1,
+          "L8": 1,
+          "L9": 1,
+          "L10": 1,
+          "L11": 1,
+          "L12": 1,
+          "L13": 1,
+          "L14": 1,
+          "L15": 1,
+          "L16": 1,
+          "L17": 1,
+          "L18": 1,
+          "L19": 1,
+          "L20": 1,
+          "L21": 1,
+          "L22": 1,
+          "L23": 1,
+          "L24": 1,
+          "L25": 1,
+          "L26": 1,
+          "L27": 1
+        },
+        "ranking": [
+          [
+            "L2"
+          ],
+          [
+            "L3"
+          ],
+          [
+            "L4"
+          ],
+          [
+            "L5"
+          ],
+          [
+            "L6"
+          ],
+          [
+            "L7"
+          ],
+          [
+            "L8"
+          ],
+          [
+            "L9"
+          ]
+        ],
+        "unacceptable": [
+          "L17"
+        ]
+      },
+      {
+        "representative": "large-r-3",
+        "group": "day",
+        "revision": 1,
+        "proposal_versions": {
+          "L0": 1,
+          "L1": 1,
+          "L2": 1,
+          "L3": 1,
+          "L4": 1,
+          "L5": 1,
+          "L6": 1,
+          "L7": 1,
+          "L8": 1,
+          "L9": 1,
+          "L10": 1,
+          "L11": 1,
+          "L12": 1,
+          "L13": 1,
+          "L14": 1,
+          "L15": 1,
+          "L16": 1,
+          "L17": 1,
+          "L18": 1,
+          "L19": 1,
+          "L20": 1,
+          "L21": 1,
+          "L22": 1,
+          "L23": 1,
+          "L24": 1,
+          "L25": 1,
+          "L26": 1,
+          "L27": 1
+        },
+        "ranking": [
+          [
+            "L3"
+          ],
+          [
+            "L4"
+          ],
+          [
+            "L5"
+          ],
+          [
+            "L6"
+          ],
+          [
+            "L7"
+          ],
+          [
+            "L8"
+          ],
+          [
+            "L9"
+          ],
+          [
+            "L10"
+          ]
+        ],
+        "unacceptable": [
+          "L18"
+        ]
+      },
+      {
+        "representative": "large-r-4",
+        "group": "night",
+        "revision": 1,
+        "proposal_versions": {
+          "L0": 1,
+          "L1": 1,
+          "L2": 1,
+          "L3": 1,
+          "L4": 1,
+          "L5": 1,
+          "L6": 1,
+          "L7": 1,
+          "L8": 1,
+          "L9": 1,
+          "L10": 1,
+          "L11": 1,
+          "L12": 1,
+          "L13": 1,
+          "L14": 1,
+          "L15": 1,
+          "L16": 1,
+          "L17": 1,
+          "L18": 1,
+          "L19": 1,
+          "L20": 1,
+          "L21": 1,
+          "L22": 1,
+          "L23": 1,
+          "L24": 1,
+          "L25": 1,
+          "L26": 1,
+          "L27": 1
+        },
+        "ranking": [
+          [
+            "L4"
+          ],
+          [
+            "L5"
+          ],
+          [
+            "L6"
+          ],
+          [
+            "L7"
+          ],
+          [
+            "L8"
+          ],
+          [
+            "L9"
+          ],
+          [
+            "L10"
+          ],
+          [
+            "L11"
+          ]
+        ],
+        "unacceptable": [
+          "L19"
+        ]
+      },
+      {
+        "representative": "large-r-5",
+        "group": "residents",
+        "revision": 1,
+        "proposal_versions": {
+          "L0": 1,
+          "L1": 1,
+          "L2": 1,
+          "L3": 1,
+          "L4": 1,
+          "L5": 1,
+          "L6": 1,
+          "L7": 1,
+          "L8": 1,
+          "L9": 1,
+          "L10": 1,
+          "L11": 1,
+          "L12": 1,
+          "L13": 1,
+          "L14": 1,
+          "L15": 1,
+          "L16": 1,
+          "L17": 1,
+          "L18": 1,
+          "L19": 1,
+          "L20": 1,
+          "L21": 1,
+          "L22": 1,
+          "L23": 1,
+          "L24": 1,
+          "L25": 1,
+          "L26": 1,
+          "L27": 1
+        },
+        "ranking": [
+          [
+            "L5"
+          ],
+          [
+            "L6"
+          ],
+          [
+            "L7"
+          ],
+          [
+            "L8"
+          ],
+          [
+            "L9"
+          ],
+          [
+            "L10"
+          ],
+          [
+            "L11"
+          ],
+          [
+            "L12"
+          ]
+        ],
+        "unacceptable": [
+          "L20"
+        ]
+      }
+    ]
+  }
+}
